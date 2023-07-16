@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      .our-swiper {
+        position: relative;
+        height: 100%;
+      }
+
+      .our-swiper {
+        background-color: #0e1438;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        background-color: 2px solid yellow;
+        color: #000;
+        margin-top: 50px;
+        padding: 40px ;
+        height: 450px;
+      }
+
+      .mySwiper {
+        max-width: 1000px;
+        max-height: 300px;
+        /* margin: 50px auto 20px auto; */
+        /* border: 2px solid black; */
+        /* margin-top: -20px; */
+        padding: 60px;
+      }
+      .mySwiper2 {
+        width: 100%;
+        max-height: 568px;
+      }
+      /* .mySwiper.swiper-slide {
+        margin-top: -20px;
+      } */
+
+      .swiper-slide {
+        text-align: center;
+        /* font-size: 18px; */
+
+        /* background-color: navy; */
+        /* #fff; */
+        display: flex;
+
+        justify-content: center;
+        /* margin: 30px; */
+        align-items: center;
+      }
+      .mySwiper img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        object-fit: cover;
+        /* border: 2px solid red; */
+        border-radius: 22px;
+        /* border-radius: 22px; */
+      }
+    </style>
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="hamburger">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="#">Academic</a>
+        </li>
+        <li>
+          <a href="#">Smarika</a>
+        </li>
+        <li>
+          <a href="#">Activities</a>
+        </li>
+        <li>
+          <a href="#">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Upcoming_events</a>
+        </li>
+        <li>
+          <a href="#">Testimonial</a>
+        </li>
+        <li>
+          <a href="#">E-material</a>
+        </li>
+        <li>
+          <a href="./contactUs.html" target="_blank">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About us</a>
+      </li>
+      <li>
+        <a href="#">Academic</a>
+      </li>
+      <li>
+        <a href="#">Smarika</a>
+      </li>
+      <li>
+        <a href="#">Activities</a>
+      </li>
+      <li>
+        <a href="#">Gallery</a>
+      </li>
+      <li>
+        <a href="#">Upcoming_events</a>
+      </li>
+      <li>
+        <a href="#">Testimonial</a>
+      </li>
+      <li>
+        <a href="#">E-material</a>
+      </li>
+      <li>
+        <a href="./contactUs.html" target="_blank">Contact us</a>
+      </li>
+    </div>
+    <section class="hero-image">
+      <img
+        src=" https://media.istockphoto.com/id/1363289778/photo/british-secondary-school.jpg?s=1024x1024&w=is&k=20&c=mBxiguG3CdnbWAvrdnMxE6ndH2M7zZxcXOR57IVQMZw="
+        alt="School"
+      />
+    </section>
+    <section class="mid-portion">
+      <div class="headmaster">
+        <img
+          src="https://media.istockphoto.com/id/1443549395/photo/successful-professional-teacher-of-nursery-school-looking-at-camera.jpg?s=1024x1024&w=is&k=20&c=-0Jmm4ZUyiavJiEXQVkrEn97aKP2BDvE97yNsQbxDpg="
+          alt="Principal"
+        />
+      </div>
+
+      <div class="message">
+        <hr class="upper-line" />
+        <h2><span>A message</span> from Headmaster</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+          laboriosam nihil harum. Similique reprehenderit magnam ut labore
+          quasi! Iure quae at quidem neque, totam illum sapiente molestias ullam
+          dolores pariatur suscipit sit cumque expedita nihil non? Doloremque
+          quidem nihil dolores sit modi dignissimos, iste, aspernatur unde, a ea
+          veritatis error?
+          <h3></h3>
+        </p>
+       
+      </div>
+    </section>
+
+    <div class="activities-heading">
+      <h1>Our activity</h1>
+    </div>
+
+    <section class="our-swiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1621910226772-771f03fb0d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="laptop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1621910226772-771f03fb0d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="laptop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="laptop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="laptop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="laptop"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1621910226772-771f03fb0d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1621910226772-771f03fb0d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- <div class="text">
+          <h2>CURRICULAR ACTIVITIES</h2>
+          <h3>Learning and growing together</h3>
+        </div> -->
+      </div>
+      <div class="text">
+        <h3>CURRICULAR ACTIVITIES</h3>
+        <p>Learning and growing together</p>
+      </div>
+    </section>
+
+    <section class="award-section">
+      <!-- <div class="award-heading"><h1>Awards</h1></div> -->
+      <div class="awards">
+        <div class="awards-image">
+          <div class="three-images">
+            <img
+              src="https://media.istockphoto.com/id/1422563791/photo/close-up-of-crystal-trophy-agaist-gray-background.jpg?s=1024x1024&w=is&k=20&c=ZYrmrU_2W7aTgf7OAN5j9-fofAZlj-IPzs_uI0xLDtE="
+              alt="award"
+            />
+            <img
+              src="https://media.istockphoto.com/id/1408174010/photo/an-employee-of-the-company-is-proud-to-receive-an-award-for-a-successful-project.jpg?s=1024x1024&w=is&k=20&c=RrEW9aTS1dpyWMgfe9aVlST0fI-AHTwwTdd65m7WR24="
+              alt="award"
+            />
+            <img
+              src="https://media.istockphoto.com/id/1388177881/photo/business-people-applauding-group-of-business-people-clapping-in-row-banner-background.jpg?s=1024x1024&w=is&k=20&c=fl1t7ElaI5SSLRFa16zUTUByRQjQBIC-Z0NVrPgI-5Q="
+              alt="award"
+            />
+          </div>
+          <div class="four-images">
+            <img
+              src="https://media.istockphoto.com/id/1400932923/photo/crystal-star-shape-trophy-against-blue-background.jpg?s=1024x1024&w=is&k=20&c=u2PM_2ueZGxtML2DRyDs_ZTIuWIs0XmdkBvJaq5euz4="
+              alt="award"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1614036417651-efe5912149d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=919&q=80"
+              alt="award"
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1677572452982-1796522f6565?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+              alt="award"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt="award"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="about-school">
+      <h1>About School</h1>
+    </div> -->
+    <section class="new">
+      <div class="myschool">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas commodi
+          voluptatum repudiandae sed fugiat voluptas tenetur, magnam eveniet.
+          Asperiores, debitis.
+        </p>
+      </div>
+      <hr class="below-abtschool" />
+      <div class="components">
+        <div class="first-component component">
+          <div class="logo">
+            <i class="fa fa-laptop"></i>
+          </div>
+          <div class="smart-class">
+            <h4>Smart classes</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              incidunt non asperiores odit.
+            </p>
+          </div>
+        </div>
+        <div class="second-component component">
+          <div class="logo">
+            <i class="fa fa-money-bill"></i>
+          </div>
+          <div>
+            <h4>Financial Aid</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              incidunt non asperiores odit.
+            </p>
+          </div>
+        </div>
+        <div class="third-component component">
+          <div class="logo">
+            <i class="fa fa-gear"></i>
+          </div>
+          <div>
+            <h4>Students help</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              incidunt non asperiores odit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="presentation-heading"><h1>Presentations</h1></div> -->
+    <section class="broken-image">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+              alt="school"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1554902843-260acd0993f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1554902843-260acd0993f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+              alt="school"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+              alt="school"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="presentation">
+        <div class="side-img">
+          <img
+            src="https://media.istockphoto.com/id/1472033620/photo/back-view-of-creative-woman-asking-a-question-on-education-event-in-the-office.jpg?s=1024x1024&w=is&k=20&c=WK7a5ByOsSh_4SkDNx5zitpRzVl5OtSplBulnHFeqS0="
+            alt="presentation"
+          />
+        </div>
+        <div class="presentation-topic">
+          <h3>DBMS presentation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            eius ipsum temporibus qui autem. Explicabo ad ex velit suscipit
+            natus magnam libero, ipsam omnis pariatur laborum, molestiae soluta
+            quas quo facilis quis nisi sint voluptate at, aliquid nobis
+            asperiores quisquam. Recusandae nemo aliquam quas, repellendus
+            perspiciatis unde provident. Libero, quibusdam?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+    <!-- <div class="engineering-heading"><h1>Our Engineering</h1></div> -->
+
+    <section class="right-card">
+      <div class="right-float">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/kMUxHteYrlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p class="para">
+       <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsa debitis corporis provident iusto laboriosam perferendis nesciunt quidem! Laudantium harum, quae, iusto veritatis exercitationem eaque quos dolores, consectetur velit magni incidunt eligendi quis! Omnis, quam enim quaerat dolor corporis debitis doloribus a doloremque minus perspiciatis dolorem quae deserunt eligendi iure accusamus sit unde ipsum atque vel, exercitationem maiores aperiam commodi. Officiis dolor fugiat quisquam, natus nemo laboriosam? A officia repellat, eligendi eius eum, odit, illum recusandae debitis corporis unde aliquid tenetur amet accusantium inventore accusamus asperiores consectetur temporibus ratione. Iste! -->
+      <i> Satyawati Secondary School, Tanahun (सत्यवती माध्यामिक विद्यालय, तनहुँ) was established in 1976 (2033 BS) as a public academic institute located in Vyas Municipality - 2, Damauli, Tanahun district, Gandaki Province of Nepal. It is affiliated to National Examinations Board (NEB) and approved by Ministry of Education, Science, and Technology (MoEST).</i>
+      </p>
+      </div>
+    </section>
+
+    <!-- <div class="curricular-heading"><h1>Our Curricular Activity</h1></div> -->
+    <section class="four-cards">
+      <div class="card1 card">
+        <button class="top-button">W-F 11:30 AM</button>
+        <img
+          src="https://media.istockphoto.com/id/1380279782/photo/diversity-equity-inclusion-symbol-concept-words-diversity-equity-inclusion-on-blocks-on.jpg?s=1024x1024&w=is&k=20&c=qvg42w7ZnavuddDm11whtpvtcKtU0VSsZCIBI_K4CPI="
+          alt=""
+        />
+        <h3>School Quiz</h3>
+        <button class="below-button">View More &gt;</button>
+      </div>
+      <div class="card2 card">
+        <button class="top-button">W-F 11:30 AM</button>
+        <img
+          src=" https://media.istockphoto.com/id/1338737384/photo/african-american-schoolgirl-pupil-student-using-working-with-microscope-at-biology-chemistry.jpg?s=1024x1024&w=is&k=20&c=8aYbaNtjsICTctpeyOQBNaZ-zhLlFpXf6At8ljZQLaI="
+          alt="science"
+        />
+
+        <h3>Computer Quiz</h3>
+        <button class="below-button">Details &gt;</button>
+      </div>
+      <div class="card3 card">
+        <button class="top-button">F 11:30 AM</button>
+        <img
+          src="https://media.istockphoto.com/id/1356638196/photo/teenage-student-using-the-microscope-in-the-laboratory.jpg?s=1024x1024&w=is&k=20&c=ZC_7xzjcg8Cg6hA1zzUpwzle_sbtCHb9x8SieXmnLlE="
+          alt=""
+        />
+        <h3>Computer Quiz</h3>
+        <button class="below-button">Details &gt;</button>
+      </div>
+      <div class="card4 card">
+        <button class="top-button">F 11:30 AM</button>
+        <img
+          src="https://media.istockphoto.com/id/1402667894/photo/energy-lecture-screen.jpg?s=1024x1024&w=is&k=20&c=OUoeiev_MpWV-f802rYlRM1aZMV0GQ8H-JQRpcUTRXY="
+          alt=""
+        />
+
+        <h3>Computer Quiz</h3>
+        <button class="below-button">Details &gt;</button>
+      </div>
+    </section>
+    <div class="program-heading"><h1>Our Programs</h1></div>
+    <div class="four-posters">
+      <div class="poster1 poster">
+        <div class="poster-img">
+          <img
+            src="https://media.istockphoto.com/id/1134381109/photo/playful-kids.jpg?s=1024x1024&w=is&k=20&c=6VC7Z8BiZaYgyvP7YVjspr4IJ5LMX1WC_8sUPlTcTBU="
+            alt=""
+          />
+        </div>
+
+        <div class="poster-text">
+          <div class="flexon">
+          <div class="window-maximize">
+          <i class="fa-solid fa-window-maximize"></i>
+         </div>
+          <h3>Annual Program</h3>
+        </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            labore pariatur earum, perspiciatis odio animi similique eveniet
+            expedita deleniti alias suscipit placeat, recusandae magnam quod
+            temporibus vitae sunt mollitia sit.
+          </p>
+          <button>MORE &gt; </button>
+        </div>
+      </div>
+      <div class="poster2 poster">
+        <div class="poster-img">
+          <img
+            src="https://media.istockphoto.com/id/1440003815/photo/hospital-colleagues-checking-medical-records-database.jpg?s=1024x1024&w=is&k=20&c=9pV-TVQPl2COpNvJYq3sZ2Bt-kl1oBCjjTDN6XKlat0="
+            alt=""
+          />
+        </div>
+
+        <div class="poster-text">
+          <div class="flexon">
+            <div class="basket-ball">
+            <i class="fa-solid fa-basketball"></i>
+          </div>
+          <h3>Sports</h3>
+        </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            labore pariatur earum, perspiciatis odio animi similique eveniet
+            expedita deleniti alias suscipit placeat, recusandae magnam quod
+            temporibus vitae sunt mollitia sit.
+          </p>
+          <button>MORE &gt;</button>
+        </div>
+      </div>
+      <div class="poster3 poster">
+        <div class="poster-img">
+          <img
+            src="https://media.istockphoto.com/id/1437830105/photo/cropped-shot-of-a-female-nurse-hold-her-senior-patients-hand-giving-support-doctor-helping.jpg?s=1024x1024&w=is&k=20&c=Ff_ORx_lp06jSgJPlP0n0m8reY_4s3XqzgAWQ1Iwq8I="
+            alt=""
+          />
+        </div>
+        <div class="poster-text">
+          <div class="flexon">
+            <div class="calender-check">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+          <h3>ISA project</h3>
+        </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            labore pariatur earum, perspiciatis odio animi similique eveniet
+            expedita deleniti alias suscipit placeat, recusandae magnam quod
+            temporibus vitae sunt mollitia sit.
+          </p>
+          <button>MORE &gt;</button>
+        </div>
+      </div>
+    </div>
+    <section class="icon-card">
+      <div class="icon1 icons">
+        <i class="fa-solid fa-users"></i>
+        <h2>2629</h2>
+        <h3>Total Students</h3>
+      </div>
+
+      <div class="icon2 icons">
+        <i class="fa-solid fa-computer"></i>
+        <h2>99</h2>
+        <h3>Total Staffs</h3>
+      </div>
+
+      <div class="icon3 icons">
+        <i class="fa-solid fa-house"></i>
+        <h2>2033</h2>
+        <h3>Established</h3>
+      </div>
+
+      <div class="icon4 icons">
+        <i class="fa-solid fa-calendar-days"></i>
+        <h2>46 years</h2>
+        <h3>Established</h3>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>
+        Upcoming Events and program<br />
+        NEWS and EVENTS
+      </h1>
+    </div>
+    <section class="events">
+      <div class="event1 event">
+        <img
+          src="https://media.istockphoto.com/id/1441599728/photo/three-friends-dancing-at-the-music-festival-in-sunny-day.jpg?s=1024x1024&w=is&k=20&c=f1kyPl8w0X02k6EuAr70m2bWu6T0VV6ZbFhf4JWtHso="
+          alt=""
+        />
+        <h4>Teej Event</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sint
+          itaque commodi nemo eaque iure tenetur magnam voluptatibus neque nisi,
+          ducimus laboriosam minima eum? Voluptatibus ipsa pariatur quaerat
+          earum quia.
+        </p>
+      </div>
+      <div class="event2 event">
+        <img
+          src="https://media.istockphoto.com/id/1415056757/photo/colorful-wedding-tents-at-night.jpg?s=1024x1024&w=is&k=20&c=uKrnGzC3XQvTUIQ5lSHsQqJpLquRalp07SjAKkVANSY="
+          alt=""
+        />
+        <h4>Mayor Cup</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sint
+          itaque commodi nemo eaque iure tenetur magnam voluptatibus neque nisi,
+          ducimus laboriosam minima eum? Voluptatibus ipsa pariatur quaerat
+          earum quia.
+        </p>
+      </div>
+      <div class="event3 event">
+        <img
+          src="https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+          alt=""
+        />
+        <h4>No more events</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sint
+          itaque commodi nemo eaque iure tenetur magnam voluptatibus neque nisi,
+          ducimus laboriosam minima eum? Voluptatibus ipsa pariatur quaerat
+          earum quia.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <section class="footer">
+        <div class="contact-info">
+          <div>
+            <h4>Contact Info</h4>
+            <div class="address foot">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <p p class="contact-heading">Address:</p>
+
+              <p class="contact-text">Vyas,2 Damauli,Tanahun</p>
+            </div>
+            <div class="phone foot">
+              <i class="fa-solid fa-phone"></i>
+              <p class="contact-heading">Phone:</p>
+
+              <p class="contact-text">099-554223</p>
+            </div>
+            <div class="mobile foot">
+              <i class="fa-solid fa-mobile"></i>
+              <p class="contact-heading">Mobile:</p>
+              <p class="contact-text">Vyas,2 Damauli,Tanahun</p>
+            </div>
+            <div class="e-mail foot">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="contact-heading">E-mail:</p>
+              <p class="contact-text">satyawati@gmail.com</p>
+            </div>
+            <div class="website foot">
+              <i class="fa-solid fa-link"></i>
+              <p class="contact-heading">website:</p>
+              <p class="contact-text">website.edu.np</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="facebook-page">
+          <h3>Satyawati Secondary School</h3>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            alt="school"
+          />
+        </div>
+      </section>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1000: {
+            slidesPerView: 5,
+            spaceBetween: 5,
+          },
+          2000: {
+            slidesPerView: 5,
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

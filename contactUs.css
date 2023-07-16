@@ -1,0 +1,143 @@
+nav {
+  background-color: blue;
+  padding: 20px;
+  width: 100%;
+  /* position: sticky; */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav li a :hover {
+  background-color: rgb(50, 50, 67);
+}
+.heading {
+  background-color: #0e1438;
+  /* rgb(13, 13, 48); */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  opacity: 0.9;
+}
+.heading h1 {
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: -0.5px;
+  padding-top: 10px;
+}
+.heading h3 {
+  font-size: 20px;
+  list-style: 1.4rem;
+  padding-bottom: 20px;
+}
+.address-foot,
+.phone-foot,
+.mobile-foot,
+.e-mail_foot {
+  display: flex;
+}
+.location {
+  display: flex;
+  justify-content: center;
+}
+.adressfoot i {
+  text-align: center;
+  height: 18px;
+}
+.contact_info {
+  margin-right: 40px;
+}
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid lightgrey; */
+  text-align: center;
+  margin: 100px 0;
+}
+.facebook-icon,
+.email-icon,
+.call-icon {
+  border: 1px solid grey;
+  width: 350px;
+  height: 170px;
+  margin: 30px;
+}
+.facebook-icon i,
+.email-icon i,
+.call-icon i {
+  font-size: 50px;
+  position: relative;
+  bottom: 25px;
+  color: rgb(22, 182, 246);
+}
+.facebook-icon p,
+.email-icon p,
+.call-icon p {
+  font-weight: bold;
+  color: rgb(16, 172, 234);
+}
+.info-sec {
+  display: flex;
+  justify-content: space-evenly;
+}
+.program-info i,
+.admissions i,
+.student-emergency i {
+  font-size: 50px;
+  color: goldenrod;
+}
+footer {
+  background-color: black;
+  margin-top: 100px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  border: 2px solid black;
+  /* background-color: black; */
+  padding: 20px;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+
+  color: white;
+}
+.facebook-page img {
+  height: 250px;
+  width: 300px;
+}
+.foot i {
+  margin: 20px;
+  font-size: 25px;
+}
+.contact-info h4 {
+  margin: 30px;
+}
+
+.contact-heading {
+  color: #777;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.contact-text {
+  line-height: 18px;
+  color: grey;
+}
+
+.address,
+.phone,
+.mobile,
+.e-mail,
+.website {
+  display: flex;
+}
