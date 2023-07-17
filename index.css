@@ -69,6 +69,8 @@ nav li a :hover {
   /* height: 450px; */
   height: 100%;
   width: 100%;
+  position: relative;
+  z-index: 4000;
   /* padding-bottom: 40px; */
   margin-left: 40px;
   background-color: #ffffff;
@@ -304,6 +306,9 @@ span {
   margin: 10px auto 30px auto;
 
   width: 50px;
+}
+.poster3 img {
+  width: 300px;
 }
 
 .right-float {
@@ -705,9 +710,6 @@ footer {
     margin: auto;
     padding: 25px;
   }
-  .poster3 img {
-    width: 300px;
-  }
 
   .sliding-image {
     margin: auto;
@@ -739,6 +741,8 @@ footer {
     max-width: 500px;
   } */
   .headmaster img {
+    /* position: relative;
+    z-index: 4000; */
     height: 450px;
     width: 360px;
     object-fit: cover;
