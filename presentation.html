@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      html {
+        position: relative;
+        height: 100%;
+      }
+
+      .our-swiper {
+        background: blue;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 10px 30px 50px 30px;
+        height: 350px;
+      }
+
+      .myswiper {
+        width: 100%;
+        height: 100px;
+        margin: 40px;
+      }
+      .myswiper2 {
+        width: 100%;
+        max-height: 568px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        /* font-size: 18px; */
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="presentation-heading"><h1>Presentations</h1></div>
+<section class="broken-image">
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img
+          src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+          alt="school"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://images.unsplash.com/photo-1554902843-260acd0993f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://images.unsplash.com/photo-1554902843-260acd0993f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+          alt="school"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://media.istockphoto.com/id/534576233/photo/elevated-view-of-students-sitting-and-learning-in-computer-room.jpg?s=1024x1024&w=is&k=20&c=FAxEComMQ4IEATrg9OIOGxlarj-_NIcavN3TGSQIRxI="
+          alt="school"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="presentation">
+    <div class="side-img">
+      <img
+        src="https://media.istockphoto.com/id/1472033620/photo/back-view-of-creative-woman-asking-a-question-on-education-event-in-the-office.jpg?s=1024x1024&w=is&k=20&c=WK7a5ByOsSh_4SkDNx5zitpRzVl5OtSplBulnHFeqS0="
+        alt="presentation"
+      />
+    </div>
+    <div class="presentation-topic">
+      <h3>DBMS presentation</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius
+        ipsum temporibus qui autem. Explicabo ad ex velit suscipit natus magnam
+        libero, ipsam omnis pariatur laborum, molestiae soluta quas quo facilis
+        quis nisi sint voluptate at, aliquid nobis asperiores quisquam.
+        Recusandae nemo aliquam quas, repellendus perspiciatis unde provident.
+        Libero, quibusdam?
+      </p>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+  </body>
+</html>
